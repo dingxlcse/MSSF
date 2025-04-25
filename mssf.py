@@ -199,7 +199,7 @@ def train_test(data_train, data_test, args):
 
         print("Epoch: %d <Train> acc: %.5f, weighted_f1: %.5f, macro_f1: %.5f, kappa: %.5f ,mcc: %.5f,precision:%.5f,recall: %.5f,aupr:%.5f" %(
         epoch, acc_tr,weighted_f1_tr,macro_f1_tr,kappa_tr,mcc_tr,macro_prec_tr,macro_recall_tr,macro_aupr_tr))
-            
+
         print("Epoch: %d <Test> acc: %.5f, weighted_f1: %.5f, macro_f1: %.5f, kappa: %.5f ,mcc: %.5f,precision:%.5f,recall: %.5f,aupr:%.5f" %(
         epoch, acc_te,weighted_f1_te,macro_f1_te,kappa_te,mcc_te,macro_prec_te,macro_recall_te,macro_aupr_te))
 
