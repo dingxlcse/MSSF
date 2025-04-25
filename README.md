@@ -1,9 +1,9 @@
 # MSSF
 ## Requirements
-- python==3.9.0
-- torch==1.9.0
-- scikit-learn==1.4.1.post1
-- numpy==1.26.4
+This project requires Python 3.9.19. Please create a virtual environment with the specified Python version. The environment and library requirements for running the project can be found in `requirements.txt`.
+
+
+
 ## Files
 ### data
 This folder contains all input files needed by our model.
@@ -20,15 +20,27 @@ fingerprint_similarity.pkl: The structure similarity matrix of the drugs. We cal
 
 drug_target.pkl: The target protein information of the drugs is obtained from DrugBank database.
 
+drug_pathway_similarity.pkl: The drug-pathway similarity matrix constructed from the benchmark dataset collected from DrugBank.
+
+drug_pathway_enzyme_similarity.pkl: The drug–pathway-enzyme similarity matrix constructed from the benchmark dataset collected from DrugBank.
+
 drug_side.pkl: The matrix has 757 rows and 994 columns to store the known drug-side effect frequency pairs. The element at the corresponding position of the matrix is set to the frequency value, otherwise 0.
 
 ### code
 1.model.py: contains the network framework of our entire model.
 
-2.main.py: test the predictive performance of our model under ten-fold cross-validation.
-## Training
+2.mssf.py: test the predictive performance of our model under ten-fold cross-validation.
+
+## Clone
+The most recent code and data can be clone directly from Github with:
 ```bash
-python MSSF.py
+$ git clone https://github.com/dingxlcse/MSSF.git
+```
+
+## Running
+After cloning the entire project from this repository, you can set up the environment based on the dependencies listed in requirements.txt. Then, run the following command to obtain the 10-fold cross-validation results of MSSF on the benchmark dataset:
+```bash
+$ python MSSF.py
 ```
 
 ## Contact 
