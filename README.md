@@ -40,7 +40,7 @@ $ git clone https://github.com/dingxlcse/MSSF.git
 ## Running
 After cloning the entire project from this repository, you can set up the environment based on the dependencies listed in requirements.txt. Then, run the following command to obtain the 10-fold cross-validation results of MSSF on the benchmark dataset:
 ```bash
-$ python MSSF.py
+$ python mssf.py
 ```
 
 ## Contact 
